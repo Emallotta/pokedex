@@ -1,4 +1,4 @@
-export function ListaPokemon({pokemon}: {pokemon: {name: string, url: string}[]}){
+export function PokemonList({pokemon}: {pokemon: {name: string, url: string}[]}){
 
     return(
         <>

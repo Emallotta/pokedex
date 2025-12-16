@@ -5,3 +5,23 @@
   text-align: center;
 }
 
+.pokedex-layout {
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pokedex-layout > :nth-child(1) {
+  grid-column: 1 / -1; /* SearchBar */
+}
+
+.pokedex-layout > :nth-child(2) {
+  overflow-y: auto; /* Lista Pokémon */
+}
+
+.pokedex-layout > :nth-child(3) {
+  overflow-y: auto; /* Dettagli */
+}
+

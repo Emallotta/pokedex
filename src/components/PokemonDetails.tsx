@@ -1,4 +1,4 @@
-export function DescrizionePokemon (){
+export function PokemonDetails (){
 
     return(
         <>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { useQuery } from '@tanstack/react-query'
-import { ListaPokemon } from './components/ListaPokemon'
+import { PokemonList } from './components/PokemonList'
 import { SearchBar } from './components/SearchBar'
 
 function App() {
@@ -14,12 +14,13 @@ function App() {
       ),
   })
 
+
   console.log(data)
   if (!data) return null
   return (
     <>
     <SearchBar />
-     <ListaPokemon pokemon={data.results}/>
+     <PokemonList pokemon={data.results}/>
     </>
   )
 }
